@@ -42,6 +42,9 @@ This project helps practice foundational Python concepts:
 
 python3 workouttracker.py
 
-## Possible Future Improvements
-- Saving workouts to a file (JSON, CSV, SQLite)
+### Status: Frozen (v1)
+
+This project is complete as a learning exercise.
+No further features are planned.
+Future improvements will happen in a separate version or project.
 
