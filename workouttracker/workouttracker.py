@@ -80,14 +80,14 @@ while True:
                 print(f"Reps: {ex['reps']}")
                 print(f"Weight: {ex['weight']}Kg")
 
-            total_weight = sum(w["weight"] for w in workout)
-            total_sets = sum(w["sets"] for w in workout)
-            total_reps = sum(w["reps"] for w in workout)
+            volume = sum(ex["sets"] * ex["reps"] * ex["weight"] for ex in workout)
+            total_reps = sum(ex["reps"] * ex["sets"] for ex in workout)
+            total_sets = sum(ex["sets"] for ex in workout)
            
-            print(f"\n Total weight: {total_weight}Kg")
+            print(f"\nVolume: {volume:.1f} Kg")
             print(f"Total sets: {total_sets}")
-            print(f"Total reps: {total_reps}")
-                
+            print(f"Total reps: {total_reps}\n")
+            
     else:
         print("Goodbye!")
         break
