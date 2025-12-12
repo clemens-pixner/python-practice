@@ -6,8 +6,9 @@ loops, input handling, and basic error checking.
 
 ## Features
 
-- Add exercises with name, stes, reps, and weight
+- Add exercises with name, sets, reps, and weight
 - View all logged exercises
+- View total volume
 - Simple text-based menu
 - Basic input validation using try/except
 
@@ -23,6 +24,7 @@ Each exercise is stored as a dictionary inside a list:
 
 {
     "name": "Bench Press",
+    "sets": 3
     "reps": 10,
     "weight": 60
 }
@@ -41,7 +43,5 @@ This project helps practice foundational Python concepts:
 python3 workouttracker.py
 
 ## Possible Future Improvements
-
-- More usefull functions
 - Saving workouts to a file (JSON, CSV, SQLite)
 
